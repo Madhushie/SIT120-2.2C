@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Progress Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Progress Tracker</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Progress</a></li>
+        <li><a href="todo.html">To-Do List</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </nav>
+    <main id="app">
+      <section class="hero">
+        <h2>Your Learning Journey, Tracked.</h2>
+        <p>Stay organized, set goals, and achieve milestones.</p>
+        <button class="cta-button" @click="showWelcomeMessage">
+          Get Started
+        </button>
+        <p v-if="showMessage" class="welcome-message">
+          Welcome to Progress Tracker!
+        </p>
+      </section>
+
+      <!-- Other sections will be added here -->
+    </main>
+    <footer>
+      <p style="color: aliceblue">&copy; 2023 Progress Tracker</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.global.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
